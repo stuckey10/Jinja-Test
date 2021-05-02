@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<ds:Data xmlns:ds="."
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation=". dataSchema.xsd">
+    <Class class_name = "StuckeysTry">
+        <field name = "name" type = "string"/>
+        <field name = "surname" type = "string"/>
+        <field name = "age" type = "int"/>
+    </Class>
+    <Class class_name = "StuckeysTry2">
+        <field name = "name" type = "string"/>
+        <field name = "surname" type = "string"/>
+        <field name = "age" type = "int"/>
+    </Class>
+</ds:Data>

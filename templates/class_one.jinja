@@ -1,0 +1,18 @@
+#include <iostream>
+
+
+class {{data.className}}
+{
+public:
+    {{data.className}}(){}
+
+    {% for member in data.members %}
+    {{member.type}} get{{member.name}}(){ return m_{{member.name}};}
+    {{member.type}} set{{member.name}}({{member.type}} {{member.name}}){ m_{{member.name}} = {{member.name}};}
+    {% endfor%}
+
+private:
+    {% for member in data.members %}
+    {{member.type}} m_{{member.name}};
+    {% endfor %}
+}
